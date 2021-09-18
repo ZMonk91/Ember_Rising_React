@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Oxygen&display=swap" rel="stylesheet">
+    <!-- endbuild -->
+
+    <title>Ember Rising</title>
+</head>
+
+<body>
+    <div class="row">
+        <!-- Navbar -->
+        <navbar class="d-none d-sm-flex col-1 nav-collapsed" id="navbar">
+            <div class="nav-list">
+                <a href="#home" class="nav-item">
+                    <i class="fa fa-home"><span class="navbar-label d-none"> Home</span>
+                    </i>
+                </a>
+                <a href="#inventory" class="nav-item">
+                    <i class="fa fa-briefcase"><span class="navbar-label d-none"> Inventory</span></i>
+                </a>
+                <a href="#skills" class="nav-item">
+                    <i class="fa fa-tasks"> <span class="navbar-label d-none"> Skills</span></i>
+                </a>
+                <a href="#adventure" class="nav-item">
+                    <i class="fa fa-map"> <span class="navbar-label d-none"> Adventure </span></i>
+                </a>
+                <a href="#combat" class="nav-item">
+                    <i class="fa fa-shield"> <span class="navbar-label d-none"> Combat </span></i>
+                </a>
+                <a href="#market" class="nav-item">
+                    <i class="fa fa-money"> <span class="navbar-label d-none"> Market </span></i>
+                </a>
+            </div>
+            <div class="nav-list">
+                <a href="#achievements" class="nav-item">
+                    <i class="fa fa-trophy"> <span class="navbar-label d-none"> Achievements</span></i>
+                </a>
+                <a href="#settings" class="nav-item">
+                    <i class="fa fa-cog"> <span class="navbar-label d-none"> Settings</span></i>
+                </a>
+            </div>
+
+        </navbar>
+        <!-- Game Wrapper -->
+        <game-wrapper class="col-11 container-fluid">
+            <div class="row justify-content-between titlebar row-title">
+                <div class="col-3">
+                    <a type="button" id='nav-toggle-btn'>
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <span><strong>UserName</strong></span>
+                </div>
+                <!-- <div class="col-2">
+                </div> -->
+
+                <div class="col-4">Current Page : Action</div>
+
+                <div class="col-4">
+                    <button class="btn btn-outline-success nav-stat-button" type="button">Gold </button>
+                    <button class="btn btn-outline-success ml-2 nav-stat-button" type="button">HP</button>
+                    <button class="btn btn-outline-success ml-2 nav-stat-button" type="button">MP</button>
+                </div>
+
+            </div>
+
+            <div class="row row-main">
+                <div class="main-content" id="app">
+                    This is where all the game will be
+                </div>
+
+            </div>
+
+            <div class="row row-chat chat-row justify-content-center">
+                <div class="chat-window col-lg-12 col-md-11 col-sm-10">
+                    <div class="row inner-chat-window">
+                        <div class="col-10 chat-left-window">
+                            <!-- <div class="row chat-row"> -->
+                            <div class="col chat-log">
+                                <div class="row">12:59 Username : Lol this is just an example of one test that I am trying to do.By having a varied length of text, or a string of text that is considerably longer than usual, I will be able to test and see how the chat screen will look when it receives this large amount of text!!!</div>
+                                <div class="row">12:59 Username : Lol this is just an example of one test that I am trying to do.By having a varied length of text, or a string of text that is considerably longer than usual, I will be able to test and see how the chat screen will look when it receives this large amount of text!!!</div>
+                                <div class="row">12:59 Username : Lol this is just an example of one test that I am trying to do.By having a varied length of text, or a string of text that is considerably longer than usual, I will be able to test and see how the chat screen will look when it receives this large amount of text!!!</div>
+                                <div class="row">12:59 Username : Lol this is just an example of one test that I am trying to do.By having a varied length of text, or a string of text that is considerably longer than usual, I will be able to test and see how the chat screen will look when it receives this large amount of text!!!</div>
+                                <div class="row">12:59 Username : Lol this is just an example of one test that I am trying to do.By having a varied length of text, or a string of text that is considerably longer than usual, I will be able to test and see how the chat screen will look when it receives this large amount of text!!!</div>
+                                <div class="row">12:59 Username : Lol this is just an example of one test that I am trying to do.By having a varied length of text, or a string of text that is considerably longer than usual, I will be able to test and see how the chat screen will look when it receives this large amount of text!!!</div>
+                                <div class="row">12:59 Username : Lol this is just an example of one test that I am trying to do.By having a varied length of text, or a string of text that is considerably longer than usual, I will be able to test and see how the chat screen will look when it receives this large amount of text!!!</div>
+                                <div class="row">12:59 Username : Lol this is just an example of one test that I am trying to do.By having a varied length of text, or a string of text that is considerably longer than usual, I will be able to test and see how the chat screen will look when it receives this large amount of text!!!</div>
+
+                            </div>
+                            <div class="input-group chat-input">
+                                <input type="text" class="form-control" id="chat-input" placeholder="Type here to chat..." value="">
+                                <span class="input-group-text">+</span>
+                                <span class="input-group-text" id="chat-submit-btn">Submit</span>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="col online-users-title"><strong>Online Users</strong></div>
+                            <div class="col online-users-log">
+                                Bob <br> Dan <br> Zspitfire04 <br> MysteryMan42069LOL
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </game-wrapper>
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js" type="module"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
